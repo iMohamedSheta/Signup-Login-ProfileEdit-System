@@ -14,10 +14,8 @@ $id = $_SESSION['id'];
 
 $result=mysqli_query($conn, "DELETE FROM users WHERE id='$id';");
 
-if(!isset($_SESSION['valid']) && !isset($_SESSION['password']))
-            {
-            header("location: Login/LoginSite.php");
-        	}
-            
-    ?>
+session_destroy();
+header("location: Login/LoginSite.php");
+
+
 
