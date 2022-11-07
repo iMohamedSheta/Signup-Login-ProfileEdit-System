@@ -49,7 +49,7 @@ if(isset($_SESSION['valid']) && isset($_SESSION['password']))
             <div class="Buttons">
                  <button type="submit" name="submit"><b>تسجيل الدخول</b></button>
             
-                 <button class="CancelButton" onclick="location.href='../Signup/Site-AR.php';"><b>إنشاء حساب</b></button>
+                 <button type="button" class="CancelButton" onclick="location.href='../Signup/Site-AR.php';"><b>إنشاء حساب</b></button>
 
             </div>
 
